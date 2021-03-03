@@ -15,3 +15,16 @@ print(EDAD_TEXTO, type(EDAD_TEXTO))
 
 AÑOS_2035 = (2035 - 2021) + EDAD
 print(f'An 2035 tendría {AÑOS_2035} años')
+
+# 2. Al realiza una consulta, recibimos valores corruptos:
+# aparcen al revés ñpd datos del alummno.
+# Qué puede hacer para obtener el siguiente resultado:
+#   -NOMBRE APELLIDO ha sacado un NOTA.
+
+VALOR_CORRUPTO = 'etnasuM enfaD, 01'
+
+VALOR_VALIDO = VALOR_CORRUPTO[::-1]
+print(VALOR_VALIDO)
+
+dato = f'{VALOR_VALIDO[4::]} ha sacado {VALOR_VALIDO[:2]}'
+print(dato)
