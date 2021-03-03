@@ -22,10 +22,10 @@ numero_2 = int(input('ingrese un número: '))
 
 iguales = numero_1 == numero_2
 desiguales = numero_1 != numero_2
-mayor_igual = numero_1 > numero_2
-mayor_igual_2 = numero_2 > numero_1
+mayor = numero_1 > numero_2
+mayor_igual = numero_2 >= numero_1
 
 print(f'{numero_1} y {numero_2} son iguales? {iguales}')
 print(f'{numero_1} y {numero_2} son desiguales? {desiguales}')
-print(f'{numero_1} es >= que {numero_2}? {mayor_igual}')
-print(f'{numero_2} es >= que {numero_1}? {mayor_igual_2}')
+print(f'{numero_1} es > que {numero_2}? {mayor}')
+print(f'{numero_2} es >= que {numero_1}? {mayor_igual}')
