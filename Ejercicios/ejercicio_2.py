@@ -14,18 +14,18 @@ else:
 # Realiza un programa que ingrese 2 núm y determine:
 #   -Si son iguales
 #   -Si son distintos
-#   -Si el primero es >= que el segundo
-#   -Si el segundo es <= que el primero
+#   -Si el primero es > que el segundo
+#   -Si el segundo es > que el primero
 
 numero_1 = int(input('ingrese un número: '))
 numero_2 = int(input('ingrese un número: '))
 
 iguales = numero_1 == numero_2
 desiguales = numero_1 != numero_2
-mayor_igual = numero_1 >= numero_2
-menor_igual = numero_2 <= numero_1
+mayor_igual = numero_1 > numero_2
+mayor_igual_2 = numero_2 > numero_1
 
 print(f'{numero_1} y {numero_2} son iguales? {iguales}')
 print(f'{numero_1} y {numero_2} son desiguales? {desiguales}')
 print(f'{numero_1} es >= que {numero_2}? {mayor_igual}')
-print(f'{numero_2} es <= que {numero_1}? {menor_igual}')
+print(f'{numero_2} es >= que {numero_1}? {mayor_igual_2}')
