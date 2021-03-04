@@ -26,5 +26,3 @@ print(lista)
 
 lista.append(20)
 print(lista)
-
-
