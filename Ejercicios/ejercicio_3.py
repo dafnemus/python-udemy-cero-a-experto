@@ -1,16 +1,16 @@
 # pylint: disable=missing-docstring
 
-# Sacar el promedio de tres números,
+# Sacar el SPROMEDIO de tres números,
 
-num_1 = 7
-num_2 = 13
-num_3 = 23
+NUM_1 = 7
+NUM_2 = 13
+NUM_3 = 23
 
-suma_notas = num_1 + num_2 + num_3
+SUMA_NOTAS = NUM_1 + NUM_2 + NUM_3
 
-promedio = suma_notas / 3
+SPROMEDIO = SUMA_NOTAS / 3
 
-print(promedio)
+print(SPROMEDIO)
 
 # en la sig matriz, el cuarto elemento es la suma de los tres anteriores:
 #   -Corregir la que no cumpla con la condicón.
