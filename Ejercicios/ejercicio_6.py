@@ -4,12 +4,12 @@
 #   -Mostrar el promedio del rango de ese numero
 
 numero = int(input('Numero: '))
-suma = 0
+SUMA = 0
 
 for i in range(numero):
-    suma += i
-print(suma)
-promedio = suma / numero
+    SUMA += i
+print(SUMA)
+promedio = SUMA / numero
 print(promedio)
 
 # Realizar un programa que pida un numero entre 0 y 9
@@ -18,12 +18,12 @@ print(promedio)
 lista = [0, 2, 7, 8]
 while True:
     numero = int(input('Ingreses un numero del 0 al 9: '))
-    if numero > 0 and numero <= 9:
+    if 0 > numero <= 9:
         break
 if numero in lista:
     print(f'{numero} esta en la lista {lista}')
 else:
-    print(f'No esta en la lista')
+    print('No esta en la lista')
 
 # Dadas dos listas de letras, generar otra cons las que se repitan:
 
