@@ -45,16 +45,38 @@ class Punto:
 
 a = Punto(5, 8)
 b = Punto(10, 2)
-c = Punto(-2, 4)
-d = Punto(1, -3)
-
 a.cuadrante()
 b.cuadrante()
-c.cuadrante()
-d.cuadrante()
-
 a.vector(b)
-c.vector(d)
+a.distancia(b)
 
-a.distancia(c)
-b.distancia(d)
+
+# Crear la Clase Rectangulo:
+#   -Constructor reciba 2 puntos, el origen por defecto.
+#   -Metodo Mostrar_base
+#   -Metodo Mostrar_altura
+#   -Metodo Mostrar_area
+
+
+class Rectangulo:
+    def __init__(self, inicio=Punto(), fin=Punto()) -> None:
+        self.inicio = inicio
+        self.fin = fin
+        self.base = abs(self.fin.punto_x - self.inicio.punto_x)
+        self.altura = abs(self.fin.punto_y - self.fin.punto_y)
+        self.area = self.base * self.altura
+
+    def mostrar_base(self):
+        print(f'La base del rectanfulo es {self.base}')
+
+    def mostrar_altura(self):
+        print(f'La altura del rectangulo es {self.altura}')
+
+    def mostrar_area(self):
+        print(f'El area del rectangulo es {self.area}')
+
+
+rec = Rectangulo(a, b)
+rec.mostrar_altura()
+rec.mostrar_base()
+rec.mostrar_area()
